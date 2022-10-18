@@ -22,8 +22,7 @@ elif operator == "-":
 elif operator == "sqrt":
     if numberTwo != 0 :
         result = numberOne ** (1/numberTwo)
-    else:result = str(float)
-    result = "infinity"
+    else:result = str(float);  result = "infinity"
     print(numberOne, operator, numberTwo, "=", result )
     print(spaceLine)
     print("")
@@ -31,6 +30,9 @@ elif operator == "sqrt":
     exit()
 elif operator == "pow":
     result = numberOne ** numberTwo
+elif operator != "pow" and "sqrt" and "/" and "*" and "+" and "-":
+    print("ERROR UNXEPECTED OPERATOR")
+    exit() 
     
 result = round(result, 3)
 

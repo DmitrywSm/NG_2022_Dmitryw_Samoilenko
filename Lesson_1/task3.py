@@ -1,9 +1,10 @@
-import datetime
+currentTime = int(input("Input required number of seconds: "))
 
-currentTime = float(input("Enter required number of seconds: "))
+days = currentTime / 86400
+hours = (currentTime / 3600 ) % 24
+minutes = (currentTime / 60) % 60
+seconds = currentTime % 60
 
-currentUnixTime = datetime.datetime.fromtimestamp(currentTime, tz=datetime.timezone.utc)
-currentTimeFormatDay = currentUnixTime.strftime("day: %d\nhour: %H\nminute: %M\nsecond: %S")
-print(currentTimeFormatDay)
-input("Press Enter to close the program")
+print(f"days:  {int(days)} \nhours: {int(hours)} \nminutes: {int(minutes)} \nseconds: {int(seconds)}")
+input("Press Enter to close program")
 exit()

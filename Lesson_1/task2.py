@@ -1,8 +1,3 @@
-
-
-from os import spawnv
-
-
 numberOne = float(input("Input first number: "))
 operator = str(input("Input math operator (*,/,+,-,sqrt,pow): "))
 numberTwo = float(input("Input second number: "))
@@ -32,6 +27,7 @@ elif operator == "pow":
     result = numberOne ** numberTwo
 elif operator != "pow" and "sqrt" and "/" and "*" and "+" and "-":
     print("ERROR UNXEPECTED OPERATOR")
+    input("Press Enter to close the program")
     exit() 
     
 result = round(result, 3)

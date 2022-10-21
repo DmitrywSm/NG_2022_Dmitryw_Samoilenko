@@ -7,7 +7,6 @@ operator_dict = {
 
 print("a*x\u00b2+b*x+c=0")
 a = float(input("Input a: "))
-
 b = float(input("Input b: "))
 c = float(input("Input c: "))
 scoreline = ("=====================================")

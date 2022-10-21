@@ -6,10 +6,10 @@ operator_dict = {
 }
 
 print("a*x\u00b2+b*x+c=0")
-a = float(input("Input a: ").replace('', "0"))
+a = float(input("Input a: "))
 
-b = float(input("Input b: ").replace('', "0"))
-c = float(input("Input c: ").replace('', "0"))
+b = float(input("Input b: "))
+c = float(input("Input c: "))
 scoreline = ("=====================================")
 #"Des" is discriminant
 Des = float((b**2)-4*a*c)

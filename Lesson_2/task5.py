@@ -1,4 +1,3 @@
-
 userStr = (input("Enter your list (1, 2, ...) "))
 userList = userStr.split(sep=", ")
 sum = 0

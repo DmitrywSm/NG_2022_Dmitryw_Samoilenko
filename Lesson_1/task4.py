@@ -15,9 +15,7 @@ Des = float((b**2)-4*a*c)
 oper = str()
 
 def rootfunc (a, b, Des, oper):
-
     Des = float(pow(Des, 1/2))
-    
     x = float((operator_dict[oper] (-b, Des)) / (2 * a))
     return x
 

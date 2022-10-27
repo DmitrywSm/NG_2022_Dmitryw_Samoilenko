@@ -15,6 +15,3 @@ print("max: ", sortedList[0])
 print("min: ", sortedList[(int(len(sortedList))-1)])
 print(f"sum({sortedList[1]}:{sortedList[int(len(sortedList)-2)]}) = ", sum)
 print(str(sortedList))
-
-input("press enter to close app")
-exit()

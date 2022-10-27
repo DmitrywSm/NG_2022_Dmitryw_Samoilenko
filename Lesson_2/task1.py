@@ -12,5 +12,3 @@ sortedCount = sorted(phraseCount, key=phraseCount.get, reverse = True)
 #for every key prints key+value from sorted dictionary
 for perKey in sortedCount:
     print(str(perKey), ": ", str(phraseCount.get(perKey)))
-
-exit()

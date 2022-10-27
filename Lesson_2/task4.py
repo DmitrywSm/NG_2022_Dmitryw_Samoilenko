@@ -12,6 +12,5 @@ for i in factList:
     multip = multip * i
 print("====================================")
 print( userFactSize,"!" ," = ",multip)
-input("press enter to close app")
 
-exit()
+

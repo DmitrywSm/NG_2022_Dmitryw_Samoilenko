@@ -14,4 +14,3 @@ def Writer (treeSize, strNumber):
 
 while strNumber != userTreeSize:
    strNumber = Writer(treeSize, strNumber)
-exit()

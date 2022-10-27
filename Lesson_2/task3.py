@@ -1,11 +1,17 @@
 treeSize = int(input("input size: "))
-treeList = []
-while treeSize > 0 :
-    treeList.append(treeSize)
-    treeSize -= 1
+userTreeSize = treeSize
+strNumber = 0
 
-for i in range(len(treeList)):
-    print(str(treeList))
-    del treeList[0]
-input("press enter to close app")
+def Writer (treeSize, strNumber):
+    treeSize -= strNumber
+    while treeSize > 0:
+        print(treeSize, end=" ")
+        if treeSize == 1:
+            strNumber += 1
+            print("\n", end="")
+            return strNumber
+        treeSize -= 1
+
+while strNumber != userTreeSize:
+   strNumber = Writer(treeSize, strNumber)
 exit()

@@ -1,16 +1,15 @@
 factSize = int(input("input number to get factorial: "))
 userFactSize = factSize
-factList = []
+factList = {1}
 multip = 1
 
 while factSize > 0 :
-    factList.append(factSize)
+    factList.add(factSize)
     factSize = factSize - 1 
+    
 
-for i in factList:
-    print(multip, "* ", i)
-    multip = multip * i
+for x in factList:
+    print(multip, " * ", x )
+    multip = multip * x
 print("====================================")
 print( userFactSize,"!" ," = ",multip)
-
-

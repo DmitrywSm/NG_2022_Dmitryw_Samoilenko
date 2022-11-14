@@ -2,13 +2,13 @@ userStr = (input("Enter your list (1, 2, ...) "))
 userList = userStr.split(sep=", ")
 sum = 0
 
-for i in range(0, len(userList)):
-    userList[i]= int(userList[i])
+for element in range(0, len(userList)):
+    userList[element]= int(userList[element])
 
 sortedList = sorted(userList, reverse= True)
 
-for i in sortedList[1:int(len(sortedList)-1)]:
-    sum = sum + int(i) 
+for element in sortedList[1:int(len(sortedList)-1)]:
+    sum = sum + int(element) 
 
 print("=============================================")
 print("max: ", sortedList[0])

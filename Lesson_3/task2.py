@@ -5,13 +5,11 @@ def askString ():
 
 optionList = ["Sort text", "Count number of elements", "Output only vowels", "Output only consonants", "Break by words and print words from the end", "Print word by number", "Enter the line again", "Exit"]
 
-# sorts user text (doesn't print)
 def sortText (userString):
     userString = list(userString)
     sortedList = sorted(userString, reverse=False)
     print(''.join(sortedList))
 
-#print numbers of elements in list
 def countNumber(userString):
     print(len(userString))
 
@@ -27,7 +25,7 @@ def onlyConsonants (userString):
         if letter in consonantsSet:
             print(letter, end="")
     print('')
-#print last two words in line
+
 def breakAndPrint (userString):
     wordList = breakByWord(userString)
     print(sorted(wordList, reverse = True))
